@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Do-Hyun Fans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lee Do-Hyun Fans</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Fan Events</a>
+                <a href="#">Merchandise</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <button class="search-btn">Search</button>
+    </section>
+
+    <section class="hero">
+        <h2>Welcome to Lee Do-Hyun Fansite</h2>
+        <img src="photos/1.png" alt="Lee Do-Hyun" class="hero-img">
+        
+       
+        
+            <!-- Countdown Window -->
+            <div class="countdown">
+                Discharge from Army: <span id="countdown-timer">XX days</span>
+            </div>
+        
+            <input type="text" class="search-bar" placeholder="Search...">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lee Do-Hyun Fansite</p>
+    </footer>
+
+    <script>
+        // Countdown Timer Script
+        function countdown() {
+            const eventDate = new Date('Dec 31, 2024 23:59:59').getTime();
+            const now = new Date().getTime();
+            const timeLeft = eventDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById('timer').innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+            if (timeLeft < 0) {
+                document.getElementById('timer').innerHTML = "EXPIRED";
+            }
+        }
+        setInterval(countdown, 1000);
+    </script>
+</body>
+</html>
