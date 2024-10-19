@@ -1,0 +1,232 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header and navigation */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+/* General Section Styling */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Landing Page Styles */
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px); /* Full height minus header/footer */
+}
+
+.landing h2 {
+  margin-bottom: 20px;
+}
+
+.landing img {
+  width: 400px; /* Make the image 1/3 of the width */
+  height: auto;
+  cursor: pointer;
+}
+
+.landing img:hover {
+  transform: scale(1.05); /* Zoom on hover */
+}
+
+.search-bar {
+  margin-top: 20px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Countdown Styling */
+.countdown {
+  margin-top: 20px;
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #444; /* Dark background for the countdown */
+    color: white; /* White text for contrast */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    font-size: 18px; /* Increase font size for visibility */
+    font-weight: bold; /* Make font bold */
+    width: fit-content; /* Adjust width to content */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+/* Gallery Page Styles */
+.gallery-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px; /* Space below the title */
+  font-weight: bold;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto; /* Allow horizontal scroll */
+  white-space: nowrap;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 400px; /* Fixed width for gallery images */
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Zoom in on hover */
+}
+
+/* Works Page Styles */
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.drama {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.drama img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.drama img:hover {
+  transform: scale(1.05);
+}
+
+/* News page styling */
+.news-container {
+  padding: 20px; /* Padding around the news section */
+}
+
+.section {
+  margin-bottom: 40px; /* Space between each section */
+  background-color: #fff; /* Background color for each section */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside each section */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+}
+
+.section h3 {
+  margin-bottom: 10px; /* Space below section title */
+}
+
+.section ul {
+  list-style-type: disc; /* Bullet points for list items */
+  padding-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.section ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Comments area */
+.comments-area {
+  margin-top: 20px; /* Space above comments area */
+  border-top: 1px solid #ddd; /* Top border for comments area */
+  padding-top: 10px; /* Padding above comments input */
+}
+
+.comments-area textarea {
+  width: 100%; /* Full width for the textarea */
+  height: 100px; /* Fixed height for the textarea */
+  margin-bottom: 10px; /* Space below textarea */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc; /* Border styling */
+  padding: 10px; /* Inner padding */
+}
+
+.comments-area button {
+  background-color: #333; /* Button background color */
+  color: white; /* Button text color */
+  padding: 10px 15px; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.comments-area button:hover {
+  background-color: #555; /* Button hover effect */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  font-size: 14px;
+}
