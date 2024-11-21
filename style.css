@@ -38,7 +38,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: #555;
+  background-color:#87CEEB;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -87,11 +87,96 @@ section {
   border: 1px solid #ccc;
 }
 
+.search-bar:hover{
+  transform: scale(1.05);
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-btn {
+  background-color: #00BFFF;
+  width: 60px;
+  height: 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+transform: scale(1.05);
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #87CEEB; /* Sky blue background for the button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropbtn:hover {
+  background-color: #00BFFF; /* Lighter sky blue on hover */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #87CEEB; /* Sky blue for the dropdown menu */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white; /* White text color for dropdown links */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #fff; /* Optional: Adds space between links */
+}
+
+.dropdown-content a:hover {
+  background-color: #00BFFF; /* Lighter blue on hover */
+}
+
+
+/* Hero Section Styles */
+.hero {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff; /* White for hero section */
+  height: 500px; /* Set a height for the hero section */
+}
+
+.hero img {
+  max-width: 50%; /* Ensures the image doesn't stretch beyond its container */
+  height: auto; /* Maintain aspect ratio */
+  border: 3px solid #dcd2c0; /* Light beige border */
+  border-radius: 10px;
+  object-fit: cover; /* Ensure the image is not distorted */
+}
+
+
 /* Countdown Styling */
 .countdown {
   margin-top: 20px;
     padding: 20px; /* Add padding for better spacing */
-    background-color: #444; /* Dark background for the countdown */
+    background-color: #00BFFF; /* same  background as menu for the countdown */
     color: white; /* White text for contrast */
     border-radius: 8px; /* Rounded corners */
     text-align: center; /* Center the text */
@@ -207,7 +292,7 @@ section {
 }
 
 .comments-area button {
-  background-color: #333; /* Button background color */
+  background-color:  #00BFFF; /* Button background color */
   color: white; /* Button text color */
   padding: 10px 15px; /* Padding inside button */
   border: none; /* No border */
